@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <title>Overclock MotoParts</title>
+</head>
+
+
+<body class="body">
+    <header class="header">
+
+      
+        <nav class="header__nav">
+
+            <div class="header__logo">
+                <img class="header__logo-img" src="../assets/img/logo.png" alt="logo">
+            </div>
+
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="../index.html">Index</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col p-0 position-relative">
+            <video class="banner__video" autoplay muted loop>
+                <source src="../assets/video/banner.mp4" type="video/mp4">       
+            </video>
+            <h2 class="banner__text1">Bienvenido a</h2>
+            <h1 class="banner__text2">Overclock Parts</h1>
+        </div>
+    </div>
+    </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <div class="productos">
+
+            <div class="productos__listado">
+               
+                <div class="producto__foto">
+                    <img class="producto__item" src="../assets/img/bujia.png" alt="">
+                </div>
+                <div class="producto__descripcion">
+                    <h2>Descripción</h2>
+                    <p>Esto es una Bujia</p>
+                </div>
+                <div class="producto__precio">
+                    <h2>Precio</h2>
+                    <p id="precio__bujia">45</p>
+                </div>
+                <div class="producto__stock">
+                    <h2>Stock</h2>
+                    <p>5</p>
+                </div>
+
+                <div class="producto__cantidad">
+                    <h2>Unidades</h2>
+                    <div class="producto__agregarSacar">
+                        <button id="sacar" class="producto__boton">-</button>
+                        <p id="unidades">0</p>
+                        <button id="test"  class="producto__boton">+</button>
+                    </div>
+                   
+                </div>
+                <div class="producto__carrito">
+                    <h2>Agregar</h2>
+                    <img src="../assets/img/cart.svg" alt="cart">
+                </div>
+            </div>
+            <div class="productos__listado">
+               
+                <div class="producto__foto">
+                    <img class="producto__item" src="../assets/img/cilindro.png" alt="">
+                </div>
+                <div class="producto__descripcion">
+                    <p>Esto es un cilindro</p>
+                </div>
+                <div class="producto__precio">
+                    <p id="precio__cilindro">40</p>
+                </div>
+                <div class="producto__stock">
+                    <p>5</p>
+                </div>
+
+                <div class="producto__cantidad">
+                    <div class="producto__agregarSacar">
+                        <button class="producto__boton">-</button>
+                        <p>0</p>
+                        <button class="producto__boton">+</button>
+                    </div>
+                   
+                </div>
+
+                <div class="producto__carrito">
+                    <h2>Agregar</h2>
+                    <img src="../assets/img/cart.svg" alt="cart">
+                </div>
+
+            </div>
+            <div class="productos__listado">
+            
+                <div class="producto__foto">
+                    <img class="producto__item" src="../assets/img/piston.png" alt="">
+                </div>
+                <div class="producto__descripcion">
+                    <p>Esto es un piston</p>
+                </div>
+                <div class="producto__precio">
+                    <p id="precio__piston">35</p>
+                </div>
+                <div class="producto__stock">
+                    <p>5</p>
+                </div>
+            
+                <div class="producto__cantidad">
+                    <div class="producto__agregarSacar">
+                        <button class="producto__boton">-</button>
+                        <p>0</p>
+                        <button class="producto__boton">+</button>
+                    </div>
+                </div>
+                <div class="producto__carrito">
+                    <h2>Agregar</h2>
+                    <img src="../assets/img/cart.svg" alt="cart">
+                </div>
+            </div>
+
+
+            <div class="productos__total">
+                <div class="productos__precioTotal">
+                    
+                    <h2>Total</h2>
+                    <p id="total">10</p>
+                
+                </div>
+                <div class="productos__confirmacion">
+                    <button class="productos__botonesConfirmacion">Cancelar</button>
+                    <button class="productos__botonesConfirmacion">Confirmar</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+    <footer class="footer">
+
+
+        <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="../index.html">Index</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="tienda.html">Tienda</a></li>
+        </ul>
+
+        <ul class="footer__redes-list">
+            <li class="footer__redes-item"><img class="footer__redes-img"src="../assets/img/facebook.webp" alt=""><a class="footer__redes-link" href="#"></a></li>
+            <li class="footer__redes-item"><img class="footer__redes-img" src="../assets/img/instagram.webp" alt=""><a class="footer__redes-link" href="#"></a></li>
+            <li class="footer__redes-item"><img class="footer__redes-img" src="../assets/img/whatsapp.webp" alt=""><a class="footer__redes-link" href="#"></a></li>
+        </ul>
+
+    </footer>
+
+ <script src="../main.js"></script>   
+ <script src="../js/store.js"></script>   
+ <script src="../js/bootstrap.bundle.min.js"></script>   
+
+</body>
+</html>
