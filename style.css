@@ -388,7 +388,13 @@ a {
 /*TIENDA PRODUCTOS*/
 
 
-
+.busqueda__barra{
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  border: solid 2px rgb(0, 0, 0);
+  font-size: 2.5rem;
+}
 
 
 
