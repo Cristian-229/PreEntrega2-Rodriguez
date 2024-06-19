@@ -27,7 +27,7 @@
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a class="header__nav-link" href="../index.html">Index</a></li>
                 <li class="header__nav-item"><a class="header__nav-link" href="nosotros.html">Nosotros</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="tienda.html" id="tiendaLink">Tienda</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" id="tiendaLink" href="tienda.html">Tienda</a></li>
             </ul>
         </nav>
 
@@ -48,34 +48,29 @@
 
     <main class="main">
 
-        <div class="busqueda">
-        <input type="text" class="busqueda__barra" id="busqueda" placeholder="Buscar por nombre...">
-        </div>
+        <div class="contenedorFormulario">
+            <div class="formulario">
+                <h1 class="formulario__titulo">Registro</h1>
+                <form class="formulario__form" method="post">
+                    <div class="formulario__username">
+                        <input class="formulario__input-register" id="user_register" type="text" required placeholder="Usuario">
+                    </div>
+                    <div class="formulario__email">
+                        <input class="formulario__input-register" id="email_register" type="email" required placeholder="Email">
+                    </div>
+                    <div class="formulario__password">
+                        <input class="formulario__input-register" id="pass_register" type="password" required placeholder="Contraseña">
+                    </div>
+
+                    <div class="contenedorRegistro">
+                        <input class="formulario__registro" id="cancelar" type="button" href="login.html" value="Cancelar">
+                        <input class="formulario__registro" id="registro" type="button" value="Registro">
+                    </div>
 
 
-        
-        <div class="productos">
 
-
-        </div>
-
-
-
-        <div class="productos__total">
-            <div class="productos__precioTotal">
-
-                <h2>Total</h2>
-                <p id="total">10</p>
-
+                </form>
             </div>
-
-
-            <div class="productos__confirmacion">
-                <button class="productos__botonesConfirmacion">Cancelar</button>
-                <button class="productos__botonesConfirmacion">Confirmar</button>
-            </div>
-        </div>
-
         </div>
 
 
@@ -89,7 +84,7 @@
         <ul class="footer__nav-list">
             <li class="footer__nav-item"><a class="footer__nav-link" href="../index.html">Index</a></li>
             <li class="footer__nav-item"><a class="footer__nav-link" href="nosotros.html">Nosotros</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" id="tiendaLink" href="tienda.html">Tienda</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="login.html">Tienda</a></li>
         </ul>
 
         <ul class="footer__redes-list">
@@ -104,7 +99,8 @@
     </footer>
 
     <script src="../main.js"></script>
-    <script src="../js/store.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/login.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/sesion.js"></script>
 

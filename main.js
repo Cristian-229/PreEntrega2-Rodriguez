@@ -17,7 +17,8 @@ const productosContainer = document.querySelector('.productos');
 
 function crearProductoElementos(productos) {
     const productosContainer = document.querySelector('.productos');
-    productosContainer.innerHTML = ''; 
+    productosContainer.innerHTML = ""
+            ; 
 
     productos.forEach(producto => {
         const productoListado = document.createElement('div');

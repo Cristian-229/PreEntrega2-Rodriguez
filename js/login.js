@@ -1,22 +1,16 @@
-
-
-//Logueo
-
-let userGenerico = 'pepe';
-let passGenerico = 'pepe';
-
-let estado = false;
-
-
 function login(user, pass) {
-    if (userGenerico == user && passGenerico == pass) {
+    const usuariosRegistrados = JSON.parse(localStorage.getItem('usuariosRegistrados')) || [];
+    const usuarioEncontrado = usuariosRegistrados.find(usuario => usuario.usuario === user && usuario.pass === pass);
 
-        estado = true;
+    //return usuarioEncontrado !== undefined;
+
+    if (usuarioEncontrado) {
+        localStorage.setItem('sesionActiva', JSON.stringify(true)); // Guarda el estado de sesión activa
+        return true;
+    } else {
+        return false;
     }
-    else {
-        estado = false;
-    }
-    return estado;
+
 }
 
 
@@ -37,3 +31,4 @@ document.getElementById('iniciar').addEventListener('click', function (event) {
         alert('Usuario o contraseña incorrectos');
     }
 });
+

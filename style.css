@@ -352,7 +352,7 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 20rem;
+  height: 22rem;
   width: 40rem;
   background-color: #fffffffa;
   border-radius: 1rem;
@@ -385,6 +385,16 @@ a {
   font-size: 2rem;
 }
 
+.contenedorRegistro{
+  margin-top: 1rem;
+}
+
+.formulario__input-register{
+  margin-top: 1rem;
+  height: 3rem;
+  width: 50%;
+  border-radius: 0.5rem;
+}
 /*TIENDA PRODUCTOS*/
 
 
@@ -398,11 +408,16 @@ a {
 
 
 
+
 .productos__listado {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #0e0e0e67;
+}
+
+#cantidad{
+margin-right: 2.5rem;
 }
 
 .producto__bujia,
