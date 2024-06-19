@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         } else {
             // Redirigir a login.html si no hay sesión activa
-            window.location.href = 'login.html';
+            window.location.href = 'pages/login.html';
         }
     });
 });
