@@ -5,25 +5,25 @@ document.addEventListener('DOMContentLoaded', function () {
         // Verificar si hay sesión activa
         const sesionActiva = JSON.parse(localStorage.getItem('sesionActiva'));
 
+        const pathname = window.location.pathname;
+
         if (sesionActiva) {
-            // Verificar si ya estamos en tienda.html
-            if (window.location.pathname.includes('tienda.html')||window.location.pathname.includes('login.html')) {
-                // Ya estamos en tienda, no hacer nada
-                return;
-            }
-            else if (window.location.pathname.includes('nosotros.html')){
-                window.location.href = 'tienda.html';
-            }   
-            else if (window.location.pathname.includes('register.html')){
-                window.location.href = 'login.html';
-            }   
-         else {
-                // Redirigir a tienda.html
+            // Verificar si ya estamos en pages/tienda.html
+            if (!pathname.includes('pages/tienda.html') && pathname.includes('index.html')) {
                 window.location.href = 'pages/tienda.html';
             }
+            else {
+                window.location.href = 'tienda.html'
+            }
+
         } else {
-            // Redirigir a login.html si no hay sesión activa
-            window.location.href = 'pages/login.html';
+            // Redirigir a pages/login.html si no hay sesión activa
+            if (!pathname.includes('pages/login.html') && pathname.includes('index.html')) {
+                window.location.href = 'pages/login.html';
+            }
+            else {
+                window.location.href = 'login.html';
+            }
         }
     });
 });
