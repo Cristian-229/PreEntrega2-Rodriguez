@@ -3,18 +3,15 @@ document.addEventListener('DOMContentLoaded', function () {
     let totalElement = document.getElementById('total');
     let total = 0;
 
-
     botonesAgregar.forEach(boton => {
         boton.addEventListener('click', function () {
 
             let unidadesElemento = boton.parentElement.querySelector('p');
             let unidades = parseInt(unidadesElemento.innerText, 10);
 
-
             let precioElemento = boton.closest('.productos__listado').querySelector('.producto__precio p');
             let precioTexto = precioElemento.innerText.replace(' USD', '');
             let precio = parseInt(precioTexto, 10);
-
 
             if (boton.textContent === '+') {
                 unidades++;
@@ -23,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 unidades--;
                 total -= precio;
             }
-
 
             unidadesElemento.innerText = unidades;
             totalElement.innerText = total;

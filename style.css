@@ -97,6 +97,7 @@ a {
   display: inline;
 }
 
+
 .header__nav-link {
   text-decoration: none;
   padding: 10px 15px;
@@ -547,4 +548,24 @@ font-size: 4rem;
     max-width: 45%;
   
   }
+}
+
+/*PANEL ADMIN*/
+
+.contenedorUsuarios{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.425);
+
+  height: 50%;
+  justify-content: space-around
+}
+
+.contenedorUsuarios__texto{
+  font-size: 3rem;
+  color: white;
+}
+
+.elementosUsuarios{
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
 }

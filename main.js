@@ -1,3 +1,6 @@
+
+//CLase del producto, luego vamos a poder crearlo desde el panel de admin.
+
 class Producto {
     constructor(nombre, precio, stock, img) {
         this.nombre = nombre;
@@ -14,6 +17,8 @@ const productos = [
 ];
 
 const productosContainer = document.querySelector('.productos');
+
+//Funcion creadora de productos en nuestro html, le vamos a estar pasando nuestro objeto de productos.
 
 function crearProductoElementos(productos) {
     const productosContainer = document.querySelector('.productos');
@@ -68,8 +73,6 @@ function crearProductoElementos(productos) {
         agregarSacar.appendChild(botonAgregar);
         productoCantidad.appendChild(agregarSacar);
 
-    
-
         productoListado.appendChild(productoFoto);
         productoListado.appendChild(productoDescripcion);
         productoListado.appendChild(productoPrecio);
@@ -83,6 +86,7 @@ function crearProductoElementos(productos) {
 
 crearProductoElementos(productos);
 
+//Va a buscar dentro de productos el texto que le indiquemos. Luego se van a implementar mas filtros.
 
 document.getElementById('busqueda').addEventListener('input', function() {
     const textoBusqueda = this.value.toLowerCase();

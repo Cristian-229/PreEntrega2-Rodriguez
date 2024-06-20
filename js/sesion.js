@@ -1,3 +1,5 @@
+//Vamos a verificar si hay una sesion activa, y si es asi en seleccionar tienda nos lleva a tienda, sino a login
+
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('tiendaLink').addEventListener('click', function (event) {
         event.preventDefault();
@@ -8,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const pathname = window.location.pathname;
 
         if (sesionActiva) {
-            // Verificar si ya estamos en pages/tienda.html
             if (!pathname.includes('pages/tienda.html') && pathname.includes('index.html')) {
                 window.location.href = 'pages/tienda.html';
             }
@@ -17,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
         } else {
-            // Redirigir a pages/login.html si no hay sesión activa
             if (!pathname.includes('pages/login.html') && pathname.includes('index.html')) {
                 window.location.href = 'pages/login.html';
             }
