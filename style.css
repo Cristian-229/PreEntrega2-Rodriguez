@@ -397,6 +397,41 @@ a {
   border-radius: 0.5rem;
 }
 /*TIENDA PRODUCTOS*/
+.subMenuProductos{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  
+}
+
+
+.tituloYcarrito{
+  justify-content: space-between;
+  display: flex;
+}
+
+.tituloYcarrito h2{
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+
+@media (min-width: 768px) {
+  .tituloYcarrito h2{
+    margin-left: 2rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+
+  }
+}
+
+#carrito{
+width: 5rem;
+background-color: #fffb00;
+border-radius: 10%;
+padding: 1rem 1rem;
+}
 
 
 .busqueda__barra{
@@ -405,8 +440,100 @@ a {
   height: 5rem;
   border: solid 2px rgb(0, 0, 0);
   font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
+.titulos{
+  color: #ffffff;
+}
+
+.contenedorEstilo{
+  background-color: rgba(5, 124, 69, 0.644);
+}
+
+.contenedorTitulos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Escritorio*/
+
+@media (min-width: 1201px) {
+  .contenedorTitulos{
+    margin-right: 9rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .titulos:first-child {
+  margin-left: 26rem;
+  }
+  }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .contenedorTitulos{
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+  .titulos:first-child {
+  margin-left: 20rem;
+  }
+  }
+
+
+  /*Tablet*/
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .contenedorTitulos{
+      margin-right: 4rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .titulos:first-child {
+    margin-left: 20rem;
+    }
+    }
+
+/*Cel*/
+
+@media (max-width: 767px) {
+  .contenedorTitulos{
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .titulos:first-child {
+  margin-left: 10rem;
+  }
+  }
+
+  @media (max-width: 767px) {
+    .titulos h2{
+font-size: 1.5rem;
+    }
+    }
+
+    @media (max-width: 767px) {
+      .producto__foto img{
+  width: 6rem;
+      }
+      }
+
+      @media (max-width: 767px) {
+        .producto__descripcion p,
+        .producto__precio p,
+        .producto__stock p {
+          font-size: 13px; /* Ejemplo de tamaño de fuente */
+          color: #ffffff; /* Ejemplo de color de texto */
+          /* Otros estilos que desees aplicar */
+        }
+        }
 
 
 
@@ -551,6 +678,16 @@ font-size: 4rem;
 }
 
 /*PANEL ADMIN*/
+
+.contenedorTitulos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedorUsuarios__titulo{
+  color: white;
+}
+
 
 .contenedorUsuarios{
   display: flex;

@@ -25,6 +25,19 @@ function crearProductoElementos(productos) {
     productosContainer.innerHTML = ""
             ; 
 
+            productosContainer.innerHTML = `
+             <div class="contenedorEstilo">
+
+            <div class="contenedorTitulos">
+                <div class="titulos"><h2>Producto</h2></div>
+                <div class="titulos"><h2>Precio</h2></div>
+                <div class="titulos"><h2>Stock</h2></div>
+                <div class="titulos"><h2>Cantidad</h2></div>
+            </div>
+            
+             </div>
+        `;
+
     productos.forEach(producto => {
         const productoListado = document.createElement('div');
         productoListado.classList.add('productos__listado');
